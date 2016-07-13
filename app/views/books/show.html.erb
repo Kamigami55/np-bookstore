@@ -22,7 +22,7 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @book.author_id %>
+  <%= link_to @book.author.name, author_path(@book.author) %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
